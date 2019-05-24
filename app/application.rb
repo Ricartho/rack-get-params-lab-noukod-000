@@ -31,6 +31,7 @@ class Application
     
        add_term = req.params["item"]
        resp.write handle_add
+       
     else
       resp.write "Path Not Found"
     end
