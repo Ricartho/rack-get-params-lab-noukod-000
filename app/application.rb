@@ -30,7 +30,7 @@ class Application
     elsif req.path.match(/add/)
     
        add_term = req.params["item"]
-       resp.write handle_add
+       resp.write handle_add(add_term)
        
     else
       resp.write "Path Not Found"
